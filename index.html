@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, 
+						initial-scale=1.0">
+	<title>GeeksforGeeks</title>
+	<link rel="stylesheet"
+		href="index.css">
+</head>
+
+<body>
+	<header>
+		<h1 class="heading">Sports Buddy</h1>
+		<h3 class="title" id="userHeading">User Login & Registration Form</h3><h5 id="admintext">Are you an admin? <button id="adminPage" onclick="adminPage">Click here</button> </h5>
+        <h3 class="title" id="adminHeading" style="display: none;">Admin Login & Registration Form</h3><h5 id="usertext" style="display: none;"> Are you an User? <button id="userPage" onclick="userPage">Click here</button> </h5>
+	</header>
+
+	<!-- container div -->
+	<div class="container">
+        <!-- <div>User Login</div> -->
+		<!-- upper button section to select
+			the login or signup form -->
+		<div class="slider"></div>
+		<div class="btn">
+			<button class="login">Login</button>
+			<button class="signup" id="signUpButton">Signup</button>
+		</div>
+
+		<!-- Form section that contains the
+			login and the signup form -->
+		<div class="form-section">
+
+			<!-- login form -->
+			<div class="login-box">
+				<input type="email"
+					class="email ele" id="loginemail"
+					placeholder="youremail@email.com">
+				<input type="password"
+					class="password ele" id="loginpassword"
+					placeholder="password">
+				<button class="clkbtn">Login</button>
+			</div>
+
+			<!-- signup form -->
+			<div class="signup-box">
+				<input type="text"
+					class="name ele" id="name"
+					placeholder="Enter your name">
+				<input type="email"
+					class="email ele" id="email"
+					placeholder="youremail@email.com">
+				<input type="password"
+					class="password ele" id="password"
+					placeholder="password">
+				<input type="password"
+					class="password ele" id="confirm password"
+					placeholder="Confirm password">
+				<button class="clkbtn">Signup</button>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+	<script src="index.js"></script>
+</body>
+</html>

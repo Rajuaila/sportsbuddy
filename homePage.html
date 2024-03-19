@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsBuddy</title>
+    <link rel="stylesheet" href="./homepage.css">
+</head>
+<body>
+
+<div class="topnav">
+    <!-- Logo -->
+    <div class="logo" style="display: flex;">
+        <div id="logo"><img src="./images/logo.png" alt="Logo" width="100"></div>
+        <div style="color: #fff; font-weight: 700; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 26px; margin-left: -30px;">SportsBuddy</div>        
+    </div>
+
+    <!-- Support, Contact, and Login/Register sections -->
+    <div class="right-section" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 700; margin-top: 15px; display: flex;">
+        <a href="#">Support</a>
+        <a href="#">Contact</a>       
+        <button id="loginbtn">Login/Register</button> 
+    </div>
+
+</div>
+<div class="container" id="container" style="display: none;">
+    <!-- <div>User Login</div> -->
+    <!-- upper button section to select
+        the login or signup form -->
+    <div class="slider"></div>
+    <div class="btn">
+        <button class="login">Login</button>
+        <button class="signup" id="signUpButton">Signup</button>
+    </div>
+
+    <!-- Form section that contains the
+        login and the signup form -->
+    <div class="form-section">
+
+        <!-- login form -->
+        <div class="login-box">
+            <input type="email"
+                class="email ele" id="loginemail"
+                placeholder="youremail@email.com">
+            <input type="password"
+                class="password ele" id="loginpassword"
+                placeholder="password">
+            <button class="clkbtn">Login</button>
+        </div>
+
+        <!-- signup form -->
+        <div class="signup-box">
+            <input type="text"
+                class="name ele" id="name"
+                placeholder="Enter your name">
+            <input type="email"
+                class="email ele" id="email"
+                placeholder="youremail@email.com">
+            <input type="password"
+                class="password ele" id="password"
+                placeholder="password">
+            <input type="password"
+                class="password ele" id="confirm password"
+                placeholder="Confirm password">
+            <button class="clkbtn">Signup</button>
+        </div>
+    </div>
+</div>
+<div id="background-div"></div>
+<div id="EventContent"></div>
+<script src="./homepage.js"></script>
+</body>
+</html>
